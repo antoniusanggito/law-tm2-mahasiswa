@@ -30,7 +30,7 @@ def invalid_param_error():
   return response
 
 # endpoint
-@app.post("/update")
+@app.post("/")
 async def update_mahasiswa(mahasiswa: Mahasiswa):
   try:
     query = f"""

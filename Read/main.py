@@ -25,7 +25,7 @@ def mahasiswa_not_found_error():
   return response
 
 # endpoint
-@app.get("/read/{npm}")
+@app.get("/{npm}")
 async def read_user(npm: str):
   try:
     query = f"""
